@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Management System</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <h1 style="margin-left: 15px;">Student Management CRUD</h1>
+  <form id="studentForm">
+    
+    <div class="input-container">
+        <div class="row">
+    <input type="hidden" id="studentId" class="form">
+    <label for="name"></label>
+    <input type="text" id="name" class="form" placeholder="Name" required>
+    <label for="email"></label>
+    <input type="email" id="email" class="form" placeholder="Email" required>
+    <label for="grade"></label>
+    <input type="text" id="grade" class="form" placeholder="GPA" required>
+        </div>
+    <div class="row">
+    <label for="age"></label>
+    <input type="number" id="age" class="form" placeholder="Age" required>
+    <label for="degree"></label>
+    <input type="text" id="degree" class="form" placeholder="Degree" required>
+    </div>
+    <div class="sub">
+        <br>
+    <button type="submit" id="submitButton" class="butt">Add Student</button>
+    <br>
+    </div>
+    </div>
+  </form>
+<br>
+<div class="sear">
+  <input type="text" class="search" id="searchBox" placeholder="Search by name, email, or degree">
+</div>
+  <!-- Student Table -->
+  <br>
+  <br>
+  <div class="table-container">
+    <table class="student-table">
+      <thead>
+        <tr>
+          <th style="background-color: black;">ID</th>
+          <th style="background-color: black;">Name</th>
+          <th style="background-color: black;">Email</th>
+          <th style="background-color: black;">Age</th>
+          <th style="background-color: black;">GPA</th>
+          <th style="background-color: black;">Degree</th>
+          <th style="background-color: black;"></th>
+        </tr>
+      </thead>
+      <tbody id="studentList">
+        <!-- Table rows will be dynamically added using JavaScript -->
+      </tbody>
+    </table>
+  </div>
+  
+
+  <!-- Form to add/edit students -->
+  
+
+  <!-- Search box -->
+  
+
+  <script src="script.js"></script>
+</body>
+</html>
